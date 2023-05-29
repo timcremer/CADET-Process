@@ -12,3 +12,5 @@ debug*
 log/
 diskcache_*
 results_*
+/.idea/
+*.egg-info
