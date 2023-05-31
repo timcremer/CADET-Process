@@ -17,6 +17,7 @@ def loss(x):
 #Variablen können auf das Intervall (0,1) transformiert werden. Untransform transformiert zurück
 
 res=minimize(loss, x_0 ,bounds=[(0,1),(0,1)],method='nelder-mead',options={'xatol': 1e-8, 'disp': True})
+
 print(res.x)
 print(optimization_problem.untransform(res.x))
 
